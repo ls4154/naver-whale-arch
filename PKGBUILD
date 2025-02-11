@@ -1,6 +1,6 @@
 # Maintainer: Youngjae Lee <ls4154.lee@gmail.com>
 pkgname=naver-whale-stable
-pkgver=4.29.282.15
+pkgver=4.30.291.8
 pkgrel=1
 pkgdesc="The web browser from NAVER"
 arch=("x86_64")
@@ -21,7 +21,7 @@ install=$pkgname.install
 source=("https://repo.whale.naver.com/stable/deb/pool/main/n/naver-whale-stable/naver-whale-stable_${pkgver}-1_amd64.deb"
 	"naver-whale-stable.sh"
 	"LICENSE.html")
-sha256sums=("6a54af0ded329addf6ffb7bf183ff411914d7f05acc35f7e8143fbcc25cf3de7"
+sha256sums=("a77760451608bfe05af9aa1c533e3f330fec0cf63a002e8556355d58ce4eba57"
 	"11522689f4c94ea86bc7e50feb48c6b823cb3cdb7bb04b565a0db2f12d25d9a5"
 	"ed82f8f83c93cbd468395cc80e3be7beb8a3f18bdf5770f165c348c15f7e5e84")
 
