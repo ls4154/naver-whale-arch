@@ -1,7 +1,7 @@
 # Maintainer: Youngjae Lee <ls4154.lee@gmail.com>
 pkgname=naver-whale-stable
 pkgver=4.32.315.11
-pkgrel=1
+pkgrel=2
 pkgdesc="The web browser from NAVER"
 arch=("x86_64")
 url="https://whale.naver.com"
@@ -27,6 +27,9 @@ sha256sums=("130ae12bd48118692acfb9213917ade844ff2dd42bbe282a7e2f2157996f8241"
 
 package() {
 	bsdtar -xf data.tar.xz -C "${pkgdir}/"
+
+	# remove google-chrome desktop file, workaround for version 4.32.315.11
+	rm -f "${pkgdir}/usr/share/applications/com.google.Chrome.desktop"
 
 	install -m755 naver-whale-stable.sh "${pkgdir}/usr/bin/naver-whale-stable"
 
